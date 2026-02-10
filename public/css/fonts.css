@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-  font-family: Optima, Candara, Calibri, Arial, sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.5px;
 }
+
 code {
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 85%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 90%;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8em;
+  letter-spacing: 2px;
 }

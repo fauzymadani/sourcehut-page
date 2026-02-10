@@ -1,51 +1,110 @@
 body {
-  max-width: 800px;
-  margin: auto;
-  padding: 1em;
-  line-height: 1.5;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #000000;
+  border: 3px solid #000000;
 }
 
 /* header and footer areas */
-.menu { padding: 0; }
-.menu li { display: inline-block; }
+.menu { 
+  padding: 10px 0; 
+  border-bottom: 2px solid #000000;
+  margin-bottom: 15px;
+}
+.menu li { 
+  display: inline-block; 
+  margin-right: 15px;
+}
 .article-meta, .menu a {
   text-decoration: none;
-  background: #eee;
-  padding: 5px;
-  border-radius: 5px;
+  background: #c0c0c0;
+  padding: 4px 8px;
+  border: 2px outset #dfdfdf;
+  color: #000000;
+  font-weight: bold;
+  display: inline-block;
+}
+.menu a:active {
+  border-style: inset;
 }
 .menu, .article-meta, footer { text-align: center; }
-.title { font-size: 1.1em; }
-footer a { text-decoration: none; }
+.title { 
+  font-size: 1.3em; 
+  font-weight: bold;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 8px;
+}
+footer { 
+  border-top: 2px solid #000000;
+  margin-top: 30px;
+  padding-top: 15px;
+}
+footer a { 
+  text-decoration: underline;
+  color: #0000ff;
+}
 hr {
-  border-style: dashed;
-  color: #ddd;
+  border: none;
+  border-top: 2px solid #000000;
+  margin: 20px 0;
 }
 
 /* code */
 pre {
-  border: 1px solid #ddd;
-  box-shadow: 5px 5px 5px #eee;
-  padding: 1em;
+  border: 2px solid #000000;
+  background-color: #f0f0f0;
+  padding: 12px;
   overflow-x: auto;
+  font-family: "Courier New", monospace;
 }
-code { background: #f9f9f9; }
-pre code { background: none; }
+code { 
+  background: #f0f0f0;
+  padding: 2px 4px;
+}
+pre code { 
+  background: none;
+  padding: 0;
+}
 
 /* misc elements */
-img, iframe, video { max-width: 100%; }
+img, iframe, video { 
+  max-width: 100%;
+  border: 2px solid #000000;
+  margin: 10px 0;
+}
 main { hyphens: auto; }
+a {
+  color: #0000ff;
+  text-decoration: underline;
+}
+a:visited {
+  color: #800080;
+}
 blockquote {
-  background: #f9f9f9;
-  border-left: 5px solid #ccc;
-  padding: 3px 1em 3px;
+  background: #f0f0f0;
+  border-left: 4px solid #000000;
+  border-right: 2px solid #000000;
+  padding: 10px 15px;
+  margin: 15px 0;
 }
 
 table {
-  margin: auto;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
+  margin: 15px auto;
+  border-collapse: collapse;
+  border: 2px solid #000000;
 }
-table thead th { border-bottom: 1px solid #ddd; }
-th, td { padding: 5px; }
-thead, tfoot, tr:nth-child(even) { background: #eee; }
+table thead th { 
+  background: #c0c0c0;
+  border: 2px solid #000000;
+  padding: 6px;
+  font-weight: bold;
+}
+th, td { 
+  padding: 8px; 
+  border: 1px solid #000000;
+}
+tbody tr:nth-child(odd) { background: #ffffff; }
+tbody tr:nth-child(even) { background: #f0f0f0; }

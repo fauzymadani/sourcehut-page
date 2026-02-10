@@ -2,17 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Welcome to my site</title>
-    <link>https://example.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on Welcome to my site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Feb 2026 10:02:21 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tiny Terminal</title>
+      <link>http://localhost:1313/posts/tiny-terminal/</link>
+      <pubDate>Tue, 10 Feb 2026 10:02:21 +0700</pubDate>
+      <guid>http://localhost:1313/posts/tiny-terminal/</guid>
+      <description>&lt;h1 id=&#34;tiny-terminal&#34;&gt;tiny-terminal&lt;/h1&gt;&#xA;&lt;p&gt;A minimal terminal emulator for resource-constrained systems.&lt;/p&gt;&#xA;&lt;p&gt;tiny-terminal is designed for old hardware where modern terminal emulators consume excessive memory. It uses X11 directly with no framework dependencies, targeting sub-50MB memory usage during operation.&lt;/p&gt;&#xA;&lt;p&gt;This is a learning project. Expect bugs and missing features.&lt;/p&gt;&#xA;&lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;&#xA;&lt;p&gt;tiny-terminal implements only essential terminal functionality:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PTY (pseudo-terminal) interface for shell communication&lt;/li&gt;&#xA;&lt;li&gt;X11 window with basic input handling&lt;/li&gt;&#xA;&lt;li&gt;Direct keyboard-to-PTY mapping&lt;/li&gt;&#xA;&lt;li&gt;Minimal ANSI escape sequence support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;No GPU acceleration. No tabs. No configuration UI. Just a window that runs your shell.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Projects</title>
-      <link>https://example.org/projects/</link>
+      <link>http://localhost:1313/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/projects/</guid>
-      <description>&lt;h2 id=&#34;tiny-terminal&#34;&gt;&lt;a href=&#34;https://example.org/posts/tiny-terminal/&#34;&gt;Tiny Terminal&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;A minimal and efficient terminal implementation written in C. This project explores low-level terminal programming and system calls.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Repository&lt;/strong&gt;: &lt;a href=&#34;https://sr.ht/~yzuaf/tiny-terminal/&#34;&gt;~yzuaf/tiny-terminal&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Language&lt;/strong&gt;: C&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt;: Active&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;more-coming-soon&#34;&gt;More Coming Soon&lt;/h2&gt;</description>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;h2 id=&#34;tiny-terminal&#34;&gt;&lt;a href=&#34;http://localhost:1313/posts/tiny-terminal/&#34;&gt;Tiny Terminal&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;A minimal and efficient terminal implementation written in C. This project explores low-level terminal programming and system calls.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Repository&lt;/strong&gt;: &lt;a href=&#34;https://git.sr.ht/~yzuaf/tiny-terminal&#34;&gt;~yzuaf/tiny-terminal&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Language&lt;/strong&gt;: C&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt;: Active&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;more-coming-soon&#34;&gt;More Coming Soon&lt;/h2&gt;</description>
     </item>
   </channel>
 </rss>
