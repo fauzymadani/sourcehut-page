@@ -1,0 +1,44 @@
+baseurl: "https://yzuaf.sr.ht"  # please update this to your actual URL
+languageCode: "en-us"
+title: "Welcome to my site"
+theme: "xmin"
+googleAnalytics: ""
+disqusShortname: ""
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+footnotereturnlinkcontents: "↩"
+
+permalinks:
+  note: "/note/:year/:month/:day/:slug/"
+  post: "/post/:year/:month/:day/:slug/"
+
+menu:
+  main:
+    - name: Home
+      url: ""
+      weight: 1
+    - name: projects
+      url: "projects/"
+      weight: 2
+
+params:
+  description: "A website built through Hugo and blogdown."
+  footer: "Yzuaf | [Sourcehut](https://sr.ht/~yzuaf/)"
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)

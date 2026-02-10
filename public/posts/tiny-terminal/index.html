@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tiny Terminal | Welcome to my site</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/projects/">projects</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Tiny Terminal</span></h1>
+
+<h2 class="date">2026/02/10</h2>
+</div>
+
+<main>
+<h1 id="tiny-terminal">tiny-terminal</h1>
+<p>A minimal terminal emulator for resource-constrained systems.</p>
+<p>tiny-terminal is designed for old hardware where modern terminal emulators consume excessive memory. It uses X11 directly with no framework dependencies, targeting sub-50MB memory usage during operation.</p>
+<p>This is a learning project. Expect bugs and missing features.</p>
+<h2 id="design">Design</h2>
+<p>tiny-terminal implements only essential terminal functionality:</p>
+<ul>
+<li>PTY (pseudo-terminal) interface for shell communication</li>
+<li>X11 window with basic input handling</li>
+<li>Direct keyboard-to-PTY mapping</li>
+<li>Minimal ANSI escape sequence support</li>
+</ul>
+<p>No GPU acceleration. No tabs. No configuration UI. Just a window that runs your shell.</p>
+<p>The entire codebase is written in C with explicit focus on memory efficiency over features.</p>
+<h2 id="current-status">Current Status</h2>
+<p><strong>Working:</strong></p>
+<ul>
+<li>PTY setup and shell spawning</li>
+<li>X11 window creation and event handling</li>
+<li>Keyboard input (printable characters, special keys, control sequences)</li>
+<li>Arrow keys and function key escape sequences</li>
+</ul>
+<p><strong>Not Yet Implemented:</strong></p>
+<ul>
+<li>Output rendering (text display)</li>
+<li>ANSI color support</li>
+<li>Scrollback buffer</li>
+<li>Window resize handling</li>
+<li>Configuration file</li>
+</ul>
+<h2 id="building">Building</h2>
+<p>Requirements:</p>
+<ul>
+<li>C99-compatible compiler</li>
+<li>X11 development libraries (<code>libX11</code>)</li>
+<li>POSIX system (Linux, *BSD)</li>
+</ul>
+<pre><code>make
+</code></pre>
+<p>To run:</p>
+<pre><code>./tiny-terminal
+</code></pre>
+<p>Note: Currently the window displays blank white because output rendering is not implemented. Input works but you won&rsquo;t see what you&rsquo;re typing.</p>
+<h2 id="architecture">Architecture</h2>
+<p>The codebase is split into modules:</p>
+<ul>
+<li><code>pty.c</code> - PTY allocation and shell process management</li>
+<li><code>term.c</code> - X11 window and event loop</li>
+<li><code>main.c</code> - Initialization and cleanup</li>
+</ul>
+<p>Each module is designed to be independently testable and has minimal cross-dependencies.</p>
+<h2 id="memory-target">Memory Target</h2>
+<p>Goal: &lt;50MB resident memory under normal shell usage.</p>
+<p>Current measurement methodology:</p>
+<pre><code>ps aux | grep tiny-terminal
+</code></pre>
+<p>Binary size is kept minimal by avoiding external libraries where possible. The current stripped binary is approximately 26KB.</p>
+<h2 id="platform-support">Platform Support</h2>
+<p>Primary target: Linux with X11.</p>
+<p>The code uses POSIX APIs and should be portable to *BSD systems with minimal changes. Wayland support is not planned.</p>
+<h2 id="contributing">Contributing</h2>
+<p>This is primarily a personal learning project, but bug reports and patches are welcome.</p>
+<p>The focus is on simplicity and resource efficiency. Feature requests that increase memory usage or add external dependencies will likely be rejected.</p>
+<h2 id="license">License</h2>
+<p>See LICENSE file.</p>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  Yzuaf | <a href="https://sr.ht/~yzuaf/">Sourcehut</a>
+  
+  </footer>
+  </body>
+</html>
+
